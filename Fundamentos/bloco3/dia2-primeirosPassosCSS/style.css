@@ -1,0 +1,33 @@
+h1 {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: orange;
+}
+
+p {
+  font-weight: 600;
+  font-weight: 48px;
+  text-decoration: underline;
+}
+
+ul {
+  background-color: aquamarine;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.change-background {
+  background-color: greenyellow;
+}
+
+.amarelo {
+  background-color: yellow;
+}
+
+.vermelho {
+  background-color: red;
+}
+
+.verde {
+  background-color: green
+}
