@@ -56,6 +56,7 @@ function createDaysOfTheMonth() {
 
 createDaysOfTheMonth()
 
+// Cria um botão
 function createHolidaysButton(buttonName) {
   let buttonContainer = document.querySelector('div.buttons-container')
   let newButton = document.createElement('button')
@@ -67,3 +68,23 @@ function createHolidaysButton(buttonName) {
 }
 
 createHolidaysButton('Feriados')
+
+// Cria função de alterar a cor dos feriados
+function displayHolidays() {
+  let button = document.querySelector('button#btn-holiday')
+  let holidays = document.getElementsByClassName('holiday')
+  let backgroundColor = 'rgb(238,238,238)';
+  let setNewColor = 'white';
+
+  button.addEventListener('click', function () {
+    for (let i = 0; i < holidays.length; i++) {
+      if (holidays[i].style.backgroundColor === setNewColor) {
+        holidays[i].style.backgroundColor = backgroundColor
+      } else {
+        holidays[i].style.backgroundColor = setNewColor
+      }
+    }
+  })
+}
+
+displayHolidays()
