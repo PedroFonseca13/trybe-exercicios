@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#section {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0 0 25px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  body {
+    background-color: #f0fdbf;
+    font-size: 1.4rem;
+  }
+
+  .container {
+    width: 85%;
+  }
+
+  .figure-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .figure-container figure {
+    flex-basis: 50%;
+  }
+}
