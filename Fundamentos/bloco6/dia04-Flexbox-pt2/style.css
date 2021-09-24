@@ -46,6 +46,7 @@ body {
   margin-right: 10px;
 }
 
+/* MAIN CONTAINER  */
 .main-container {
   display: flex;
   flex-wrap: wrap;
