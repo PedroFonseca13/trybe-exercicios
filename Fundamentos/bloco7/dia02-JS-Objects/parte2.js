@@ -25,7 +25,25 @@ const addNewKey = (obj, key, value) => {
 addNewKey(lesson2, 'turno', 'noite')
 
 const listKeys = obj => Object.keys(obj)
-console.log(listKeys(lesson1))
+// console.log(listKeys(lesson1))
 
 const sizeObj = obj => Object.keys(obj).length
-log(sizeObj(lesson1))
+// console.log(sizeObj(lesson1))
+
+const listObj = obj => Object.values(obj)
+// console.log(listObj(lesson1))
+
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3})
+// console.log((allLessons));
+
+const allStudents = obj => {
+  let total = 0;
+  const array = Object.keys(obj)
+  for (index in array) {
+    const currentKey = array[index]
+    total += obj[currentKey].numeroEstudantes
+  }
+
+  return total;
+}
+console.log(allStudents(allLessons))
